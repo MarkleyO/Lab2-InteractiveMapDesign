@@ -10,7 +10,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(
 
 var cellTowers = null;
 
-cellTowers = L.geojson.ajax("assets/cell_towers.geojson",{
+cellTowers = L.geoJson.ajax("assets/cell_towers.geojson",{
   attribution: 'CellTower Data &copy; map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | made By Bo Zhao'
 });
 
